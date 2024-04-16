@@ -1,0 +1,42 @@
+.image-carousel {
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+
+.slick-slide img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.image-slide {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 100px; /* Adjust left position as needed */
+  transform: translateY(-50%);
+  color: #ffffff; /* Text color */
+  font-size: 48px; /* Font size */
+  font-weight: 800; /* Font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Spacing between letters */
+  text-align: left; /* Left align text */
+  animation: fadein 1s; /* Add fade-in animation */
+  background: linear-gradient(to right, #00416a, #e4e5e6); /* Gradient background */
+  -webkit-background-clip: text; /* Clip text to background */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

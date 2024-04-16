@@ -1,0 +1,88 @@
+.services {
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+  }
+  
+  .service-card {
+    width: 390px; /* Adjusted width for larger screens */
+    height: 130px; /* Adjusted height for larger screens */
+    margin: 10px; /* Increased margin for better spacing */
+    display: flex; /* Make the card a flex container */
+    border: 1px solid rgb(223, 216, 216);
+    border-radius: 10px;
+   
+  }
+  
+  .service-image {
+    width: 40%; /* Image takes up half of the card width */
+    overflow: hidden; /* Ensure image doesn't overflow */
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; Ensure the image covers the entire space */
+  }
+  
+  .service-details {
+    width: 70%; /* Details take up half of the card width */
+    padding: 10px;
+  }
+  
+  .service-details h2 {
+    margin-bottom: 0 px;
+    margin-top: 0px ;
+    font-weight: 645;
+  }
+  
+  .service-details p {
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding */
+   
+    text-indent: 0; /* Remove text indentation */
+    white-space: nowrap; /* Prevent wrapping to ensure the text stays in a single line */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  }
+  
+  
+  .service-details a {
+    display: inline-block;
+    padding: 10px 16px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .service-card{
+
+        width: 400px; /* Adjusted width for large screens */
+    height: 180px;
+    }
+     
+      
+  }
+  
+  @media screen and (max-width: 765px) {
+    .service-card {
+      width: 350px; /* Adjusted width for medium screens */
+      height: 150px; /* Adjusted height for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 579px) {
+    .service-card {
+      width: 350px; /* Adjusted width for smaller screens */
+      height: 150px; /* Adjusted height for smaller screens */
+    }
+  }
+  
